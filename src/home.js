@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { ProgressBar } from "react-bootstrap";
+import {ProgressBar } from "react-bootstrap";
+import Navbar from "./components/Navbar";
 import Title from "./components/Title";
 import "./home.css";
 
@@ -16,6 +17,7 @@ function Home() {
       {displayBar && <ProgressBar now={nowValue}></ProgressBar>}
       {!displayBar && (
         <main className="">
+          <Navbar/>
           <Title />
         </main>
       )}
