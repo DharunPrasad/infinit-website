@@ -39,11 +39,11 @@ const progress = [
     cmd: true,
   },
   {
-    text: "🔍  May 20...",
+    text: "May 20...",
     cmd: false,
   },
   {
-    text: "🚚  Technical Events...",
+    text: "Technical Events...",
     cmd: false,
     frames: createProgressFrames(10, 100, 60, 1),
   },
@@ -77,7 +77,7 @@ const progress = [
     cmd: false,
   },
   {
-    text: "✨  Arambikalamaa !",
+    text: "Arambikalamaa !",
     cmd: false,
   },
   {
@@ -92,7 +92,7 @@ function App() {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 10000);
+    }, 4000);
   }, []);
 
   // Custom css for loader
@@ -102,7 +102,7 @@ function App() {
     <div>
       <Terminal
         lines={progress}
-        interval={80}
+        interval={30}
         replay={false}
         isLoading={isLoading}
       />

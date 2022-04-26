@@ -5,7 +5,7 @@ import Title from "./components/Title";
 import "./home.css";
 
 function Home() {
-  const [nowValue, setNowValue] = useState(10);
+  const [nowValue, setNowValue] = useState(5);
   const [displayBar, setDisplayBar] = useState(true);
   useEffect(() => {
     setTimeout(() => setNowValue(100), 500);
