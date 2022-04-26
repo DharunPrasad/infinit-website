@@ -1,13 +1,33 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* #ffcc00 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.progress{
+  width: max-content !important;
+  position: absolute;
+  top : 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+  height : 50px !important;
+  width: 50% !important;
+  margin: 0 auto ;
+  border-radius:5rem !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.progress-bar{
+  background-color: #ffcc00 !important; 
+
+}
+
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+  .progress{
+    width : 90% !important;
+    margin: 0 auto !important;
+  }
 }

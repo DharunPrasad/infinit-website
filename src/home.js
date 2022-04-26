@@ -6,7 +6,9 @@ function Terminal() {
   return (
     <div>
       Home Page
+
       <ProgressBar now={60}></ProgressBar>
+     
     </div>
   );
 }
