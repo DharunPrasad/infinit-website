@@ -92,7 +92,7 @@ function App() {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 10000);
   }, []);
 
   // Custom css for loader
@@ -104,7 +104,6 @@ function App() {
         lines={progress}
         interval={80}
         replay={false}
-        height={500}
         isLoading={isLoading}
       />
     </div>

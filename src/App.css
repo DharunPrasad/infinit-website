@@ -32244,21 +32244,8 @@ video {
   content: none;
 }
 
-.progress{
-  position: absolute;
-  top : 70%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height : 50px !important;
-  width: 50% !important;
-  margin: 0 auto ;
-  border-radius:5rem !important;
-}
 
-.progress-bar{
-  background-color: #ffcc00 !important;
-}
+
 
 @media (min-width: 640px) {
   .sm\:container {

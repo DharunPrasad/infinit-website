@@ -5,7 +5,7 @@
 
 
 .progress{
-  width: max-content !important;
+  width: 50% !important;
   position: absolute;
   top : 70%;
   left: 50%;
@@ -14,7 +14,7 @@
 
   height : 50px !important;
   width: 50% !important;
-  margin: 0 auto ;
+  margin: 0 auto !important;
   border-radius:5rem !important;
 }
 
@@ -24,10 +24,15 @@
 }
 
 
+.Terminal-window{
+  height : 100vh !important;
+}
+
 /* For mobile */
 @media only screen and (max-width: 600px) {
   .progress{
     width : 90% !important;
     margin: 0 auto !important;
+    top : 80%;
   }
 }
