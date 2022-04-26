@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import Terminal from "@nitric/react-animated-term";
 import "@nitric/react-animated-term/css/styles.css";
-import "./hunt";
 import Home from "./home";
 
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {

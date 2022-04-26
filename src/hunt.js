@@ -1,1 +1,0 @@
-var flag = "sadfdf";

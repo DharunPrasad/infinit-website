@@ -18,7 +18,7 @@ function Home() {
       {!displayBar && (
         <main className="">
           <Navbar/>
-          <Title />
+          <Title title = "InfinIt"/>
         </main>
       )}
     </div>
