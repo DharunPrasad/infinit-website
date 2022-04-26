@@ -29,7 +29,10 @@ body{
 
 }
 
-
+.main-page{
+  background-image: url(../public/assets/site-bg.png);
+  background-size: cover;
+}
 .Terminal-window{
   height : 100vh !important;
 }

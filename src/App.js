@@ -4,6 +4,7 @@ import Terminal from "@nitric/react-animated-term";
 import "@nitric/react-animated-term/css/styles.css";
 import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {
   const frames = [];
@@ -108,12 +109,16 @@ function App() {
       />
     </div>
   ) : (
+    <div className="main-page">
+              <Navbar/>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home isLoading={isLoading} />} />
         <Route path="/technical" element={<div>Tech</div>} />
       </Routes>
     </BrowserRouter>
+    </div>
+
   );
 }
 

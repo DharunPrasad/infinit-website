@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ProgressBar } from "react-bootstrap";
-import EventMain from "./components/EventMain";
-import Navbar from "./components/Navbar";
+import {ProgressBar } from "react-bootstrap";
 import Title from "./components/Title";
+import EventMain from "./components/EventMain"
 import "./home.css";
 
 function Home() {
@@ -14,12 +13,11 @@ function Home() {
   }, []);
 
   return (
-    <div className="home-page h-screen text-white">
+    <div className="h-screen text-white">
       {displayBar && <ProgressBar now={nowValue}></ProgressBar>}
       {!displayBar && (
         <main className="">
-          <Navbar />
-          <Title title="InfinIT" />
+          <Title title = "InfinIt"/>
           <EventMain />
         </main>
       )}
