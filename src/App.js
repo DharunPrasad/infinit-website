@@ -9,6 +9,7 @@ import Technical from "./components/Technical";
 import NonTechnical from "./components/nonTechnical";
 
 import flags from "./flag";
+import Timer from "./components/Timer";
 console.log(flags);
 
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {

@@ -1,9 +1,13 @@
+import { useState } from "react";
+
 const Timer = () => {
+  const [dayView, setDay] = useState()  
+console.log(dayView)
+    
     //Implimenting count down
 const countDown = () => {
 
-    
-    const countDate = new Date("Nov 21, 2021 10:00:00").getTime();
+    const countDate = new Date("May 20, 2022 10:00:00").getTime();
     const now = new Date().getTime();
     const timeGap = countDate - now;
   
@@ -15,25 +19,23 @@ const countDown = () => {
   
     //calculatin the timeGap to display
     const dayTimer = Math.floor(timeGap / day);
-    const hourTimer = Math.floor((timeGap % day) / hour);
-    const minuteTimer = Math.floor((timeGap % hour) / minute);
-    const secondTimer = Math.floor((timeGap % minute) / second);
+    // const hourTimer = Math.floor((timeGap % day) / hour);
+    // const minuteTimer = Math.floor((timeGap % hour) / minute);
+    // const secondTimer = Math.floor((timeGap % minute) / second);
   
     //Displaying the UI
-    daysEl.textContent = `${dayTimer}`.padStart(2, 0);
-    hoursEl.textContent = `${hourTimer}`.padStart(2, 0);
-    minutesEl.textContent = `${minuteTimer}`.padStart(2, 0);
-    secondsEL.textContent = `${secondTimer}`.padStart(2, 0);
+    const daysEl = `${dayTimer}`.padStart(2, 0);
+    return daysEl
   };
   
   countDown();
   setInterval(function () {
-    countDown();
+     setDay(countDown());
   }, 1000);
     
     return ( 
        <>
-
+        <p className="text-xs h-30">{dayView} days to go !!</p>
         </>
      );
 }
