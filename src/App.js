@@ -5,6 +5,7 @@ import "@nitric/react-animated-term/css/styles.css";
 import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Technical from "./components/Technical";
 
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {
   const frames = [];
@@ -114,7 +115,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home isLoading={isLoading} />} />
-        <Route path="/technical" element={<div>Tech</div>} />
+        <Route path="/technical" element={<Technical/>} />
       </Routes>
     </BrowserRouter>
     </div>

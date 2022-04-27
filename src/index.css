@@ -28,7 +28,10 @@ body{
   background-color: #ffcc00 !important; 
 
 }
-
+a{
+  color : white !important;
+  text-decoration: none !important;
+}
 .main-page{
   background-image: url(../public/assets/site-bg.png);
   background-size: cover;
