@@ -95,31 +95,49 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [events, setEvents] = useState(null);
 
-
   useEffect(() => {
-
     setEvents([
       {
-        id : 0,
-        title : "Paper Presentation",
-        discription : "This is awsome Paper "
+        id: 0,
+        title: "Paper Presentation",
+        discription: "This is awsome Paper ",
       },
       {
-        id : 1,
-        title : "Debugging",
-        discription : "This is awsome debug"
+        id: 1,
+        title: "Quiz",
+        discription: "This is awsome debug",
       },
       {
-        id : 2,
-        title : "Catch The Flag",
-        discription : "This is awsome ctf"
-      }
-      ,{
-        id : 3,
-        title : "Quiz",
-        discription : "This is awsome quiz"
-      }
-    ])
+        id: 2,
+        title: "Tech Connection",
+        discription: "This is awsome ctf",
+      },
+      {
+        id: 3,
+        title: "Debug",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 4,
+        title: "Web dev",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 5,
+        title: "Poster Designing",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 6,
+        title: "Tech Debate",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 7,
+        title: "Flag Hunt - CTF",
+        discription: "This is awsome quiz",
+      },
+    ]);
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
@@ -141,14 +159,14 @@ function App() {
   ) : (
     <div className="main-page h-fit">
       <Navbar />
-      <div className = "pt-10">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home isLoading={isLoading} />} />
-          <Route path="/technical" element={<Technical events = {events}/>} />
-          <Route path="/nonTechnical" element={<NonTechnical />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="pt-10">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home isLoading={isLoading} />} />
+            <Route path="/technical" element={<Technical events={events} />} />
+            <Route path="/nonTechnical" element={<NonTechnical />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );
