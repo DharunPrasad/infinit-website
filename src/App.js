@@ -99,41 +99,49 @@ function App() {
     setEvents([
       {
         id: 0,
+        technical: true,
         title: "Paper Presentation",
         discription: "This is awsome Paper ",
       },
       {
         id: 1,
+        technical: true,
         title: "Quiz",
         discription: "This is awsome debug",
       },
       {
         id: 2,
+        technical: true,
         title: "Tech Connection",
         discription: "This is awsome ctf",
       },
       {
         id: 3,
+        technical: true,
         title: "Debug",
         discription: "This is awsome quiz",
       },
       {
         id: 4,
+        technical: true,
         title: "Web dev",
         discription: "This is awsome quiz",
       },
       {
         id: 5,
+        technical: true,
         title: "Poster Designing",
         discription: "This is awsome quiz",
       },
       {
         id: 6,
+        technical: true,
         title: "Tech Debate",
         discription: "This is awsome quiz",
       },
       {
         id: 7,
+        technical: true,
         title: "Flag Hunt - CTF",
         discription: "This is awsome quiz",
       },
