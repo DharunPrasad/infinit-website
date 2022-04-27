@@ -145,6 +145,54 @@ function App() {
         title: "Flag Hunt - CTF",
         discription: "This is awsome quiz",
       },
+      {
+        id: 8,
+        technical: false,
+        title: "Singing",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 9,
+        technical: false,
+        title: "Dance",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 10,
+        technical: false,
+        title: "Photography",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 11,
+        technical: false,
+        title: "Mime",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 12,
+        technical: false,
+        title: "Adzap",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 13,
+        technical: false,
+        title: "Channel surfing",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 14,
+        technical: false,
+        title: "Drawing ",
+        discription: "This is awsome quiz",
+      },
+      {
+        id: 15,
+        technical: false,
+        title: "Rangoli",
+        discription: "This is awsome quiz",
+      },
     ]);
     // Wait for 3 seconds
     setTimeout(() => {
