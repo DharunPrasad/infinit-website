@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import technical from "../assets/technical.png";
-import nontechnical from "../assets/nonTech.png";
+import nontechnical from "../assets/nti.png";
 
 function EventMain() {
   return (
