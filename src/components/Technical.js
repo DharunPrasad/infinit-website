@@ -6,7 +6,7 @@ import { useState } from "react";
 const Technical = ({ events }) => {
   const[filteredEvent, setFilteredEvent] = useState("")
   const [displayModal, setDisplayModal] = useState(false)
-  
+
   const handleClick = (id) => {
     console.log(id);
     const filter = events.filter(event => event.id === id);
@@ -16,10 +16,10 @@ const Technical = ({ events }) => {
   console.log(filteredEvent)
 
   return (
-    <div className="technical-event-page text-white relative">
+    <div className="technical-event-page text-white relative h-fit">
       <Title title="Technical Events" />
 
-      <div className="flex flex-col md:grid md:gap-20 md:grid-cols-2 md:auto-rows-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 md:w-8/12 h-fit mt-5 md:-mt-1 mx-auto text-sm">
+      <div className="flex flex-col md:grid md:gap-20 md:grid-cols-2 md:auto-rows-auto w-10/12 md:w-8/12 h-fit mt-5 md:-mt-1 mx-auto text-sm">
         {events &&
           events.map((event) => (
             <div

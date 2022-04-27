@@ -6,7 +6,7 @@ import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Technical from "./components/Technical";
-import NonTechnical from "./components/NonTechnical";
+import NonTechnical from "./components/nonTechnical";
 
 import flags from "./flag";
 console.log(flags);
