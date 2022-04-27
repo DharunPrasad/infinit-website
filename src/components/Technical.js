@@ -19,11 +19,11 @@ const Technical = ({ events }) => {
     <div className="technical-event-page text-white relative h-fit">
       <Title title="Technical Events" />
 
-      <div className="flex flex-col md:grid md:gap-20 md:grid-cols-2 md:auto-rows-auto w-10/12 md:w-8/12 h-fit mt-5 md:-mt-1 mx-auto text-sm">
+      <div className="flex flex-col sm:grid sm:gap-20 sm:grid-cols-2 sm:auto-rows-auto w-10/12 sm:w-8/12 h-fit mt-5 sm:-mt-1 mx-auto text-sm">
         {events &&
-          events.map((event) => (
+          events.filter(event => event.technical === true).map((event) => (
             <div
-              className="text-center cursor-pointer hover:shadow-md p-2 transform hover:scale-105 transition-all "
+              className="text-center cursor-pointer hover:shadow-lg p-2 transform hover:scale-105 transition-all "
               key={event.id} onClick = {() => handleClick(event.id)}
             >
               <img src={technical} alt="" className="block mx-auto" />

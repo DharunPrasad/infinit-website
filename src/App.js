@@ -6,7 +6,7 @@ import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Technical from "./components/Technical";
-import NonTechnical from "./components/nonTechnical";
+import NonTechnical from "./components/NonTechnical";
 
 import flags from "./flag";
 console.log(flags);
@@ -101,7 +101,7 @@ function App() {
         id: 0,
         technical: true,
         title: "Paper Presentation",
-        discription: "This is awsome Paper ",
+        discription: "This is awsome Paper \n Is this a new line \n Is this a new line, \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line",
       },
       {
         id: 1,
@@ -220,7 +220,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home isLoading={isLoading} />} />
             <Route path="/technical" element={<Technical events={events} />} />
-            <Route path="/nonTechnical" element={<NonTechnical />} />
+            <Route path="/nonTechnical" element={<NonTechnical  events={events} />} />
           </Routes>
         </BrowserRouter>
       </div>
