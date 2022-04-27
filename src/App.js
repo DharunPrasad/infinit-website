@@ -191,7 +191,7 @@ function App() {
         id: 15,
         technical: false,
         title: "Rangoli",
-        discription: "This is awsome quiz",
+        discription: "This is awsome quiz ",
       },
     ]);
     // Wait for 3 seconds
