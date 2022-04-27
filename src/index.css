@@ -34,8 +34,23 @@ a{
 }
 .main-page{
   background-image: url(../public/assets/site-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  height: fit-content
 }
+
+.technical-event-page{
+  background-image: url(../public/assets/site-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  height: 120vh;
+}
+
 .Terminal-window{
   height : 100vh !important;
 }

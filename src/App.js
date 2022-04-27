@@ -6,7 +6,7 @@ import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Technical from "./components/Technical";
-import NonTechnical from "./components/nonTechnical";
+import NonTechnical from "./components/NonTechnical";
 
 import flags from "./flag";
 console.log(flags);
@@ -93,8 +93,29 @@ const progress = [
 ];
 function App() {
   const [isLoading, setIsLoading] = useState(true);
+  const [events, setEvents] = useState(null);
+
 
   useEffect(() => {
+
+    setEvents([
+      {
+        id : 0,
+        title : "Paper Presentation"
+      },
+      {
+        id : 1,
+        title : "Debugging"
+      },
+      {
+        id : 2,
+        title : "Catch The Flag"
+      }
+      ,{
+        id : 3,
+        title : "Quiz"
+      }
+    ])
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
@@ -114,15 +135,17 @@ function App() {
       />
     </div>
   ) : (
-    <div className="main-page">
+    <div className="main-page h-fit">
       <Navbar />
+      <div className = "pt-10">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home isLoading={isLoading} />} />
-          <Route path="/technical" element={<Technical />} />
-          <Route path="/NonTechnical" element={<NonTechnical />} />
+          <Route path="/technical" element={<Technical events = {events}/>} />
+          <Route path="/nonTechnical" element={<NonTechnical />} />
         </Routes>
       </BrowserRouter>
+      </div>
     </div>
   );
 }
