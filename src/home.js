@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import {ProgressBar } from "react-bootstrap";
+import { ProgressBar } from "react-bootstrap";
 import Title from "./components/Title";
-import EventMain from "./components/EventMain"
+import EventMain from "./components/EventMain";
 import "./home.css";
+import logo from "./assets/logo.png";
 
 function Home() {
   const [nowValue, setNowValue] = useState(5);
@@ -17,7 +18,9 @@ function Home() {
       {displayBar && <ProgressBar now={nowValue}></ProgressBar>}
       {!displayBar && (
         <main className="">
-          <Title title = "InfinIt"/>
+          {/* <Title title = "InfinIt"/> */}
+          <img src={logo} className="w-80 block mx-auto  " />
+
           <EventMain />
         </main>
       )}

@@ -5,7 +5,7 @@ import nontechnical from "../assets/nonTech.png";
 
 function EventMain() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 md:w-6/12 h-2/5 mx-auto text-sm">
+    <div className="flex flex-col md:flex-row justify-between items-center absolute top-2/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 md:w-6/12 h-2/5 mx-auto text-sm">
       <Link to="/technical">
         <div className="text-center">
           <img src={technical} className="block mx-auto mb-3" />
