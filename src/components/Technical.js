@@ -1,8 +1,20 @@
 import Title from "./Title";
 import technical from "../assets/technical.png";
 import Modal from "./Modal";
+import { useState } from "react";
 
 const Technical = ({ events }) => {
+  const[filteredEvent, setFilteredEvent] = useState("")
+  const [displayModal, setDisplayModal] = useState(false)
+  
+  const handleClick = (id) => {
+    console.log(id);
+    const filter = events.filter(event => event.id === id);
+    setFilteredEvent(filter)
+    setDisplayModal(true)
+  }
+  console.log(filteredEvent)
+
   return (
     <div className="technical-event-page text-white relative">
       <Title title="Technical Events" />
@@ -12,20 +24,15 @@ const Technical = ({ events }) => {
           events.map((event) => (
             <div
               className="text-center cursor-pointer hover:shadow-md p-2 transform hover:scale-105 transition-all "
-              key={event.id}
+              key={event.id} onClick = {() => handleClick(event.id)}
             >
               <img src={technical} alt="" className="block mx-auto" />
               <p className="bg-green-300 text-black ">{event.title}</p>
             </div>
           ))}
       </div>
-      <Modal>
-        {events && events.map(event => (
-          <div className="">
-            {event.title}
-          </div>
-        ))}
-      </Modal>
+      {displayModal &&
+       <Modal setDisplayModal = {setDisplayModal} filteredEvent = {filteredEvent}/>}
     </div>
   );
 };

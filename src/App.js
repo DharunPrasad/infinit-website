@@ -101,19 +101,23 @@ function App() {
     setEvents([
       {
         id : 0,
-        title : "Paper Presentation"
+        title : "Paper Presentation",
+        discription : "This is awsome Paper "
       },
       {
         id : 1,
-        title : "Debugging"
+        title : "Debugging",
+        discription : "This is awsome debug"
       },
       {
         id : 2,
-        title : "Catch The Flag"
+        title : "Catch The Flag",
+        discription : "This is awsome ctf"
       }
       ,{
         id : 3,
-        title : "Quiz"
+        title : "Quiz",
+        discription : "This is awsome quiz"
       }
     ])
     // Wait for 3 seconds
