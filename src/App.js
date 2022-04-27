@@ -6,6 +6,10 @@ import Home from "./home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Technical from "./components/Technical";
+import NonTechnical from "./components/nonTechnical";
+
+import flags from "./flag";
+console.log(flags);
 
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {
   const frames = [];
@@ -111,15 +115,15 @@ function App() {
     </div>
   ) : (
     <div className="main-page">
-              <Navbar/>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home isLoading={isLoading} />} />
-        <Route path="/technical" element={<Technical/>} />
-      </Routes>
-    </BrowserRouter>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home isLoading={isLoading} />} />
+          <Route path="/technical" element={<Technical />} />
+          <Route path="/NonTechnical" element={<NonTechnical />} />
+        </Routes>
+      </BrowserRouter>
     </div>
-
   );
 }
 
