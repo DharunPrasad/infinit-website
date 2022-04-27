@@ -1,6 +1,6 @@
 import Title from "./Title";
 import technical from "../assets/technical.png";
-import { useEffect } from "react";
+import Modal from "./Modal";
 
 const Technical = ({ events }) => {
   return (
@@ -19,6 +19,13 @@ const Technical = ({ events }) => {
             </div>
           ))}
       </div>
+      <Modal>
+        {events && events.map(event => (
+          <div className="">
+            {event.title}
+          </div>
+        ))}
+      </Modal>
     </div>
   );
 };
