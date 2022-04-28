@@ -53,6 +53,7 @@ a{
 
 .Terminal-window{
   height : 100vh !important;
+  font-size: 10rem !important;
 }
 
 /* For mobile */
