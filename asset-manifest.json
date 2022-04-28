@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/infinit-website/static/css/main.7843a4a8.css",
+    "main.css": "/infinit-website/static/css/main.cdcba64b.css",
     "main.js": "/infinit-website/static/js/main.7a29d1f2.js",
     "static/media/main-logo.png": "/infinit-website/static/media/main-logo.f6658c93c61dd4ee5b1b.png",
     "static/media/logo.png": "/infinit-website/static/media/logo.30a9a59ca33185789e6b.png",
     "static/media/site-bg.png": "/infinit-website/static/media/site-bg.8c864f0dc0d9a382fd23.png",
     "index.html": "/infinit-website/index.html",
-    "main.7843a4a8.css.map": "/infinit-website/static/css/main.7843a4a8.css.map",
+    "main.cdcba64b.css.map": "/infinit-website/static/css/main.cdcba64b.css.map",
     "main.7a29d1f2.js.map": "/infinit-website/static/js/main.7a29d1f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7843a4a8.css",
+    "static/css/main.cdcba64b.css",
     "static/js/main.7a29d1f2.js"
   ]
 }
