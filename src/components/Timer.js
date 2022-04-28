@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Timer = () => {
   const [dayView, setDay] = useState()  
-console.log(dayView)
+// console.log(dayView)
     
     //Implimenting count down
 const countDown = () => {
@@ -34,9 +34,9 @@ const countDown = () => {
   }, 1000);
     
     return ( 
-       <>
-        <p className="text-xs h-30">{dayView} days to go !!</p>
-        </>
+       <div className="pt-3">
+        <p className="text-xs w-full text-center">{dayView} days to go !!</p>
+        </div>
      );
 }
  

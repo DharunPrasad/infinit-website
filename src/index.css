@@ -14,7 +14,7 @@ body{
 .progress{
   width: 50% !important;
   position: absolute;
-  top : 70%;
+  top : 80%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -59,7 +59,20 @@ a{
 @media only screen and (max-width: 600px) {
   .progress{
     width : 90% !important;
+    height : 30px !important;
     margin: 0 auto !important;
     top : 80%;
   }
 }
+/* Overflow */
+*::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+*::-webkit-scrollbar-track {
+  background-color: #3c4346;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+} 
