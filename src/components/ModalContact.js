@@ -34,8 +34,9 @@ const ModalContact = ({setDisplayContact}) => {
        
         </div>
         <div className="p-2 w-full  text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            President <br /> <br /> Matthew Samuel: 8110938725  <br /> <br /> <br/>
-            Vice-President <br/> <br /> Akash : 9551074540 
+            <a href="https://wa.me/8110938725" target = "_blank" className="text-black"><span className="mb-3">President</span> Matthew Samuel: 8110938725  <br /> <br /> <br/></a>
+            <a href="https://wa.me/9551074540 " target = "_blank" className="text-black"> Vice-President <br/> <br /> Akash : 9551074540  <br /> <br/></a>
+           
         </div>
         
       </div>

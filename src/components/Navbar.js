@@ -6,7 +6,7 @@ const Navbar = () => {
   const [displayContact, setDisplayContact] = useState(false);
   return (
     <>
-      <nav className="fixed w-full h-30 bg-gray-300 flex justify-between items-center text-black p-2 md:px-5 z-10">
+      <nav className="fixed w-full h-16 bg-gray-300 flex justify-between items-center text-black p-2 md:px-5 z-10">
         <div>
           <img src={logo} alt="" className="w-10 h-10" />
         </div>

@@ -35,7 +35,7 @@ const countDown = () => {
     
     return ( 
        <div className="pt-3">
-        <p className="text-xs w-full text-center">{dayView} days to go !!</p>
+        <p className="text-xs md:text-base w-full text-center">{dayView} days to go !!</p>
         </div>
      );
 }
