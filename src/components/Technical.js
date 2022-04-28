@@ -8,7 +8,8 @@ const Technical = ({ events }) => {
   const [displayModal, setDisplayModal] = useState(false)
 
   const handleClick = (id) => {
-    console.log(id);
+    // console.log(id);
+    document.body.style.overflow = "hidden";
     const filter = events.filter(event => event.id === id);
     setFilteredEvent(filter)
     setDisplayModal(true)

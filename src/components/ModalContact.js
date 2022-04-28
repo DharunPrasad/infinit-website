@@ -13,7 +13,7 @@ const ModalContact = ({setDisplayContact}) => {
       <div className="w-10/12 h-4/5 md:w-8/12 bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black z-20">
       <div className="w-full bg-gray-600 h-10 flex justify-between items-center">
           <p className="text-sm p-2 text-white mt-auto">
-            Contanct List
+            Contact List
           </p>
           <div onClick={handleClick}>
             <svg
@@ -33,9 +33,11 @@ const ModalContact = ({setDisplayContact}) => {
           </div>
        
         </div>
-        <div className="p-2 w-full  text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            <a href="https://wa.me/8110938725" target = "_blank" className="text-black"><span className="mb-3">President</span> Matthew Samuel: 8110938725  <br /> <br /> <br/></a>
-            <a href="https://wa.me/9551074540 " target = "_blank" className="text-black"> Vice-President <br/> <br /> Akash : 9551074540  <br /> <br/></a>
+        <div className=" w-full text-xs md:text-sm text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+            <a href="https://wa.me/+918110938725" target = "_blank" className="text-black">President   <br /> <br/> Matthew Samuel: +91 8110938725  <br /> <br /> <br/></a>
+            <a href="https://wa.me/+919551074540 " target = "_blank" className="text-black"> Vice-President <br/> <br /> Akash : +91 9551074540  <br /> <br/></a>
+            <a href="https://wa.me/+919566274508 " target = "_blank" className="text-black"> Cultural Secretary <br/> <br /> Praveen Kumar : +91 9566274508 <br /> <br/></a>
+            <a href="https://wa.me/+919962456236" target = "_blank" className="text-black"> Treasurer <br/> <br /> Suriya : +91 9962456236 <br /> <br/></a>
            
         </div>
         

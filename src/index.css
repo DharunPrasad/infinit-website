@@ -39,20 +39,20 @@ a{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: fit-content
+  height: fit-content;
 }
 
-.technical-event-page{
+body{
   background-image: url(../public/assets/site-bg.png);
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   height: fit-content;
 }
 
 .Terminal-window{
-  height : 100vh !important;
+  height : 120vh !important;
   font-size: 10rem !important;
 }
 

@@ -198,9 +198,14 @@ function App() {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
+      document.body.style.overflow = "visible"
+
     }, 4000);
   }, []);
 
+  if(isLoading){
+    document.body.style.overflow = "hidden"
+  }
   // Custom css for loader
 
   return isLoading ? (
