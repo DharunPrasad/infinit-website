@@ -12,6 +12,7 @@ import Ctf from "./components/Ctf";
 import flags from "./flag";
 console.log(flags);
 
+
 const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {
   const frames = [];
   const step = Math.ceil(progressCount / frameCount);

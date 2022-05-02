@@ -17,7 +17,7 @@ const Navbar = () => {
         <svg
         onClick={() => setDisplayContact(true)}
           xmlns="http://www.w3.org/2000/svg"
-          className="h-12 w-12 bg-gray-700 p-2 rounded cursor-pointer hover:scale-105 transform"
+          className="h-12 w-12 bg-primary p-2 rounded cursor-pointer hover:scale-105 transform"
           fill="none"
           viewBox="0 0 24 24"
           stroke="#fff"

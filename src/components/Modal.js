@@ -34,7 +34,7 @@ const Modal = ({ setDisplayModal, filteredEvent }) => {
               </svg>
             </div>
           </div>
-          <div className="px-2 pt-2 pb-20 overflow-auto h-full text-sm md:text:xs">
+          <div className="px-2 pt-2 pb-28 overflow-auto h-full text-sm md:text:xs mt-[1.5rem] md:mt-1">
             {filteredEvent &&
               filteredEvent[0].discription
                 .split("\n")
