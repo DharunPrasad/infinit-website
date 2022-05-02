@@ -27,7 +27,7 @@ const Technical = ({ events }) => {
               className="text-center cursor-pointer hover:shadow-lg p-2 transform hover:scale-105 transition-all "
               key={event.id} onClick = {() => handleClick(event.id)}
             >
-              <img src={technical} alt="" className="block mx-auto" />
+              <img src={event.logo} alt="techigen" className="block mx-auto w-32 h-auto mb-3" />
               <p className="bg-green-300 text-black ">{event.title}</p>
             </div>
           ))}

@@ -99,10 +99,9 @@ function App() {
     setEvents([
       {
         id: 0,
-        technical: true,
+        technical: true,      
         title: "Paper Presentation",
-        discription:
-          "* One team per department in a college is allowed.\n * Two participants or solo per team.\n* Minimum 10 slides.\n* Duration:3-4 minutes.\n* Judge decision will be the final.\n",
+        discription:"* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
       },
       {
         id: 1,
@@ -115,6 +114,8 @@ function App() {
         technical: true,
         title: "Tech Connection",
         discription: "This is for tech connection events",
+        logo : "https://www.linkpicture.com/q/coni_1.png"
+
       },
       {
         id: 3,
