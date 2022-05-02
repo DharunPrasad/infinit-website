@@ -99,23 +99,24 @@ function App() {
     setEvents([
       {
         id: 0,
-        technical: true,      
+        technical: true,
         title: "Paper Presentation",
-        discription:"* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
+        discription:
+          "* One team per department in a college is allowed.\n * Two participants or solo per team.\n* Minimum 10 slides.\n* Duration: 5+2 minutes.\n* 5 minutes for presentation, 2 minutes for question.\n* Judge decision will be the final.\n",
       },
       {
         id: 1,
         technical: true,
         title: "Quiz",
-        discription: "This is for quiz events",
+        discription:
+          "* One team per department in a college is allowed.\n* Two participants per team.\n* 2 rounds will be held (prelims & finals).\n* Prelims will have choice(MCQ) questions. \n* Final round Questions will not have options.\n* Teams have to answer on a first come first serve basis(buzzer type).\n* Judge decision will be the final.\n",
       },
       {
         id: 2,
         technical: true,
         title: "Tech Connection",
         discription: "This is for tech connection events",
-        logo : "https://www.linkpicture.com/q/coni_1.png"
-
+        logo: "https://www.linkpicture.com/q/coni_1.png",
       },
       {
         id: 3,
@@ -140,13 +141,15 @@ function App() {
         id: 6,
         technical: true,
         title: "Tech Debate",
-        discription: "This is Tech Debate event",
+        discription:
+          "* One team per department in a college is allowed.\n* Two participants or solo per team.\n* Topics will be given ON-SPOT.\n* 15 mins Preparation + 10 mins Debate.\n* Judge decision will be the final.\n",
       },
       {
         id: 7,
         technical: true,
-        title: "Flag Hunt - CTF",
-        discription: "",
+        title: "Tech Hunt - CTF",
+        discription:
+          "* One team per department in a college is allowed.\n* Two participants per team.\n* Basic web programming knowledge.\n * Duration:1 hour.\n* Judge decision will be the final\n ",
       },
       {
         id: 8,
