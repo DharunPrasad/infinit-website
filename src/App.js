@@ -219,10 +219,12 @@ function App() {
       />
     </div>
   ) : (
+    <BrowserRouter>
+        <Navbar />
+
     <div className="main-page h-fit">
-      <Navbar />
       <div className="pt-10">
-        <BrowserRouter>
+
           <Routes>
             <Route path="/" element={<Home isLoading={isLoading} />} />
             <Route path="/technical" element={<Technical events={events} />} />
@@ -231,9 +233,10 @@ function App() {
               element={<NonTechnical events={events} />}
             />
           </Routes>
-        </BrowserRouter>
       </div>
     </div>
+    </BrowserRouter>
+
   );
 }
 
