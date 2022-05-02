@@ -102,7 +102,7 @@ function App() {
         technical: true,
         title: "Paper Presentation",
         discription:
-          "* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
+          "* One team per department in a college is allowed.\n * Two participants or solo per team.\n* Minimum 10 slides.\n* Duration:3-4 minutes.\n* Judge decision will be the final.\n",
       },
       {
         id: 1,
@@ -120,7 +120,8 @@ function App() {
         id: 3,
         technical: true,
         title: "Debug",
-        discription: "This is debug event",
+        discription:
+          "* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
       },
       {
         id: 4,
@@ -144,7 +145,7 @@ function App() {
         id: 7,
         technical: true,
         title: "Flag Hunt - CTF",
-        discription: "This is for Flag Hunt - CTF event",
+        discription: "",
       },
       {
         id: 8,
@@ -198,13 +199,12 @@ function App() {
     // Wait for 3 seconds
     setTimeout(() => {
       setIsLoading(false);
-      document.body.style.overflow = "visible"
-
+      document.body.style.overflow = "visible";
     }, 4000);
   }, []);
 
-  if(isLoading){
-    document.body.style.overflow = "hidden"
+  if (isLoading) {
+    document.body.style.overflow = "hidden";
   }
   // Custom css for loader
 
@@ -220,11 +220,10 @@ function App() {
     </div>
   ) : (
     <BrowserRouter>
-        <Navbar />
+      <Navbar />
 
-    <div className="main-page h-fit">
-      <div className="pt-10">
-
+      <div className="main-page h-fit">
+        <div className="pt-10">
           <Routes>
             <Route path="/" element={<Home isLoading={isLoading} />} />
             <Route path="/technical" element={<Technical events={events} />} />
@@ -233,10 +232,9 @@ function App() {
               element={<NonTechnical events={events} />}
             />
           </Routes>
+        </div>
       </div>
-    </div>
     </BrowserRouter>
-
   );
 }
 
