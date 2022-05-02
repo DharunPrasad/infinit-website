@@ -102,7 +102,7 @@ function App() {
         technical: true,
         title: "Paper Presentation",
         discription:
-          "This is awsome Paper \n Is this a new line \n Is this a new line, \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line \n Is this a new line",
+          "* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
       },
       {
         id: 1,
