@@ -8,7 +8,7 @@ const Modal = ({ setDisplayModal, filteredEvent }) => {
   return (
     <div className="">
       <div
-        className="w-full h-screen fixed top-0 left-0 bg-gray-900 opacity-50 z-20"
+        className="w-full h-screen fixed top-0 left-0 bg-gray-900 opacity-90 z-20"
         onClick={handleClick}
       ></div>
       <div className="w-10/12 h-4/5 md:w-8/12 bg-white fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-black z-20 overflow-hidden">
