@@ -103,6 +103,7 @@ function App() {
         title: "Paper Presentation",
         discription:
           "* One team per department in a college is allowed.\n * Two participants or solo per team.\n* Minimum 10 slides.\n* Duration: 5+2 minutes.\n* 5 minutes for presentation, 2 minutes for question.\n* Judge decision will be the final.\n",
+        logo: "https://www.linkpicture.com/q/ppti.png",
       },
       {
         id: 1,
@@ -110,12 +111,14 @@ function App() {
         title: "Quiz",
         discription:
           "* One team per department in a college is allowed.\n* Two participants per team.\n* 2 rounds will be held (prelims & finals).\n* Prelims will have choice(MCQ) questions. \n* Final round Questions will not have options.\n* Teams have to answer on a first come first serve basis(buzzer type).\n* Judge decision will be the final.\n",
+        logo: "https://www.linkpicture.com/q/qi_2.png",
       },
       {
         id: 2,
         technical: true,
         title: "Tech Connection",
-        discription: "This is for tech connection events",
+        discription:
+          "* One team per department in a college is allowed.\n*  Three participants or solo per team.\n* 3 Rounds will be held.\n* Judge decision will be the final.\n",
         logo: "https://www.linkpicture.com/q/coni_1.png",
       },
       {
@@ -124,18 +127,22 @@ function App() {
         title: "Debug",
         discription:
           "* One team per department in a college is allowed. \n* Two participants per team.\n * Two rounds will be held.\n* First round:Quiz \n* Second round:Debugging\n* Duration:2 hours\n* Judge decision will be the final.",
+        logo: "https://www.linkpicture.com/q/debugi.png",
       },
       {
         id: 4,
         technical: true,
         title: "Web dev",
-        discription: "This is Web development event",
+        discription:
+          "Two teams per college is allowed.\n* Participants should develop the website with only html, css and javascript ( framework, libraries are not allowed ).\n* Submit the website github link to the event incharge through mail.\n* Participants  should send the documentation through mail to the respective event incharges and submit their documentation on the day of the event.\n* Judge decision will be the final.\n",
+        logo: "https://www.linkpicture.com/q/webi_2.png",
       },
       {
         id: 5,
         technical: true,
         title: "Poster Designing",
         discription: "This is for Poster Designing event",
+        logo: "https://www.linkpicture.com/q/posi.png",
       },
       {
         id: 6,
@@ -143,6 +150,7 @@ function App() {
         title: "Tech Debate",
         discription:
           "* One team per department in a college is allowed.\n* Two participants or solo per team.\n* Topics will be given ON-SPOT.\n* 15 mins Preparation + 10 mins Debate.\n* Judge decision will be the final.\n",
+        logo: "https://www.linkpicture.com/q/debi_1.png",
       },
       {
         id: 7,
@@ -150,54 +158,63 @@ function App() {
         title: "Tech Hunt - CTF",
         discription:
           "* One team per department in a college is allowed.\n* Two participants per team.\n* Basic web programming knowledge.\n * Duration:1 hour.\n* Judge decision will be the final\n ",
+        logo: "https://www.linkpicture.com/q/ctfi.png",
       },
       {
         id: 8,
         technical: false,
         title: "Singing",
-        discription: "This is for Singing event",
+        discription:
+          "* Two teams per college\n* Solo participants will be admitted  * Duration should not exceed 3-4 minutes\n* Judge decision will be the final.\n",
       },
       {
         id: 9,
         technical: false,
         title: "Dance",
-        discription: "This is for Dance event",
+        discription:
+          "* Two teams per college\n* A team should be maximum 6-8 participants is allowed.\n* Participants are requested to keep the audio ready before the event. \n* Duration should not exceed 4-5 minutes.\n* Judge decision will be the final.\n",
       },
       {
         id: 10,
         technical: false,
         title: "Photography",
-        discription: "This is for Photography",
+        discription:
+          "* Two teams per college\n* Theme will be given on the spot\n* Duration should not exceed 1 hour.\n* Link will be given to the students to upload the JPEG file.\n* Judge decision will be the final.\n",
       },
       {
         id: 11,
         technical: false,
         title: "Mime",
-        discription: "This is for Mime",
+        discription:
+          "* One team per department in a college  is allowed. \n* Minimum 4 and maximum 6 participants are allowed.\n* Duration should not exceed 4-5 minutes. \n* Participants are requested to keep the audio ready before the event. \n* Judge decision will be the  final.\n",
       },
       {
         id: 12,
         technical: false,
         title: "Adzap",
-        discription: "This is for Adzap Event",
+        discription:
+          "* One team per department in a college  is allowed.\n* A team should be maximum 5+1 participants is allowed.\n* Duration should not exceed 5 minutes. \n* Topic will be given on the spot.\n* Judge decision will be the  final.\n",
       },
       {
         id: 13,
         technical: false,
         title: "Channel surfing",
-        discription: "This is for Channel Surfing event",
+        discription:
+          "* Two teams per college is allowed\n* A team should be maximum 2+1 participants is allowed.\n * Topic will be given on the spot. \n* Judge decision will be the fin",
       },
       {
         id: 14,
         technical: false,
         title: "Drawing ",
-        discription: "This is for Drawing event",
+        discription:
+          "* Individual participation.\n* Two participants per department in a college.\n* Topic will be given on the spot. \n * Judge decision will be the final.\n * Required materials to be brought by the contestants.\n ",
       },
       {
         id: 15,
         technical: false,
         title: "Rangoli",
-        discription: "This is for Rangoli event",
+        discription:
+          "* Two teams per college\n*  A team should be maximum 2 participants allowed.\n*  Duration should not exceed 130 minutes \n* Judge decision will be the final. ",
       },
     ]);
     // Wait for 3 seconds
