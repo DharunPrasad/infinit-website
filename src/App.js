@@ -39,8 +39,12 @@ const createProgressFrames = (frameCount, progressCount, maxWidth, delay) => {
 
 const progress = [
   {
-    text: "Guru Nanak College (autonomous)",
+    text: "Guru Nanak College (autonomous),Velachery,chennai",
     cmd: true,
+  },
+  {
+    text: "Department of Computer Science",
+    cmd: false,
   },
   {
     text: "init InfinIT 2k22",
@@ -51,41 +55,89 @@ const progress = [
     cmd: false,
   },
   {
-    text: "Technical Events...",
+    text: "",
     cmd: false,
     frames: createProgressFrames(10, 100, 60, 1),
   },
   {
-    text: "[1/7] Paper Presentation",
+    text: "Technical Events... 👨‍💻",
     cmd: false,
   },
   {
-    text: "[2/7] Quiz",
+    text: "[1/8] Paper Presentation  ",
     cmd: false,
   },
   {
-    text: "[3/7] Connection",
+    text: "[2/8] Quiz",
     cmd: false,
   },
   {
-    text: "Non Technical Events...",
+    text: "[3/8] Connection",
+    cmd: false,
+  },
+  {
+    text: "[4/8] Tech Hunt - CTF",
+    cmd: false,
+  },
+  {
+    text: "[5/8] Poster Making",
+    cmd: false,
+  },
+  {
+    text: "[6/8] Web dev",
+    cmd: false,
+  },
+  {
+    text: "[7/8]  Tech Debate",
+    cmd: false,
+  },
+  {
+    text: "[8/8] Debugging",
+    cmd: false,
+  },
+  {
+    text: "",
     cmd: false,
     frames: createProgressFrames(10, 100, 60, 1),
   },
   {
-    text: "[1/7] Singing",
+    text: "Non Technical Events... 🕺",
     cmd: false,
   },
   {
-    text: "[2/7] Dance",
+    text: "[1/8] Singing",
     cmd: false,
   },
   {
-    text: "[3/7] Mime",
+    text: "[2/8] Dance",
     cmd: false,
   },
   {
-    text: "Arambikalamaa !",
+    text: "[3/8] Mime",
+    cmd: false,
+  },
+  {
+    text: "[3/8] Photography",
+    cmd: false,
+  },
+  {
+    text: "[3/8] Adzao",
+    cmd: false,
+  },
+  {
+    text: "[3/8] Channel Surfing",
+    cmd: false,
+  },
+  {
+    text: "[3/8] Drawing",
+    cmd: false,
+  },
+  {
+    text: "[3/8] Rangoli",
+    cmd: false,
+  },
+  {
+    text: "Arambikalamaa 🔥 ⚡ !",
     cmd: false,
   },
   {
@@ -236,7 +288,7 @@ function App() {
     <div>
       <Terminal
         lines={progress}
-        interval={30}
+        interval={20}
         replay={false}
         isLoading={isLoading}
       />
