@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Technical from "./components/Technical";
 import NonTechnical from "./components/nonTechnical";
+import Ctf from "./components/Ctf";
 
 import flags from "./flag";
 console.log(flags);
@@ -165,7 +166,7 @@ function App() {
         technical: false,
         title: "Singing",
         discription:
-          "* Two teams per college\n* Solo participants will be admitted  * Duration should not exceed 3-4 minutes\n* Judge decision will be the final.\n",
+          "* Two teams per college\n* Solo participants will be admitted \n * Duration should not exceed 3-4 minutes\n* Judge decision will be the final.\n",
       },
       {
         id: 9,
@@ -252,6 +253,7 @@ function App() {
               path="/nonTechnical"
               element={<NonTechnical events={events} />}
             />
+            <Route path="/ctf" element={<Ctf />} />
           </Routes>
         </div>
       </div>
