@@ -7,7 +7,7 @@ const Timer = () => {
     //Implimenting count down
 const countDown = () => {
 
-    const countDate = new Date("May 20, 2022 10:00:00").getTime();
+    const countDate = new Date("May 20, 2023 10:00:00").getTime();
     const now = new Date().getTime();
     const timeGap = countDate - now;
   
